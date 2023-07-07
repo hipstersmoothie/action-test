@@ -1,0 +1,16 @@
+name: test
+
+on: push
+
+env:
+  NODE_OPTIONS: --max_old_space_size=6144
+
+jobs:
+  setup-env:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          lfs: true
+      - run: npm i
+      - run: node -r esbuild-register .github/scripts/get-message.ts

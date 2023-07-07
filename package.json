@@ -1,0 +1,16 @@
+{
+  "name": "test-actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Andrew Lisowski",
+  "license": "ISC",
+  "dependencies": {
+    "@actions/github": "^5.1.1",
+    "esbuild-register": "^3.4.2"
+  }
+}
